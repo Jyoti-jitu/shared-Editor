@@ -1,0 +1,31 @@
+. 🚀 Code Execution / Console Output
+Right now, users can edit code, but they can't run it!
+
+Add a terminal panel at the bottom that uses an API like Piston to actually execute code (Python, C++, Java, JS) securely and stream the output back in real-time.
+For Javascript, you can even evaluate the code directly inside the browser using a Sandboxed iframe or a Web Worker.
+2. 🌍 Multiple Language & Syntax Highlighting Support
+Currently, it's hardcoded to JavaScript.
+
+Add a beautiful dropdown menu next to the "Active Users" to let users switch the programming language (e.g., Python, HTML, CSS, Go, Rust). Monaco Editor has excellent built-in support for multiple languages.
+3. 💬 Real-Time Chat System
+Since you are already using Socket.io, a live chat feature would be perfect!
+
+Add a small chat panel below the Active Users list.
+Users can brainstorm and debug together without needing a secondary app like Discord.
+4. 🎭 Themes Customization
+Make it feel personalized!
+
+Add an option to toggle between vs-dark (current), vs-light, and hc-black (High Contrast).
+You can even integrate custom Monaco Editor themes (like Dracula, Monokai, or GitHub Light).
+5. 📁 Private Rooms / Shareable Links
+Right now, everyone joins the same "monaco-demo" room.
+
+Let users create unique rooms (e.g., localhost:5173/room/a4b2c8).
+Only users with the link can join that specific room.
+6. 🖊️ Labeled Cursors in the Editor
+The y-monaco binding already handles syncing cursor positions, but we can enhance it so that a small colored flag with the user's name floats right above their cursor as they type (similar to Google Docs or Figma).
+
+7. 💾 Export/Download File
+Add a glowing "Download" button to the top right section!
+
+With one click, users can download the current content of the editor as index.js, main.py, etc., based on the currently selected language.
